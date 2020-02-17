@@ -16,22 +16,12 @@ DockerToolbox와 DockerDesktop은 ip 체크 방법이 다르다. 현재 윈도�
 
     # DockerToolbox
     $ docker-machine ip default 
-    192.168.99.100
     
     # DockerDesktop
     $ echo $(docker network inspect lemp_default | grep Gateway | grep -o -E '[0-9\.]+')
-    172.18.0.1
-    
-    $ docker-machine ip default # DockerToolbox
-    192.168.99.100
     
     $ curl 192.168.99.100:8080
-    Hello HTML!</br>
-    
     $ curl 192.168.99.100:8080/index.php
-    Hello PHP!
-    
     $ curl 192.168.99.100:8080/connect.php
-    Successful database connection!
 
 ![test](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d9e71af0-c448-4a8a-b628-7289fc017259/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45NF7XZ3W2%2F20200217%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200217T074705Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIA%2BXVoffCyMvrDZ1Qydur6HYjwrZprKzSNDqNJrxh4baAiEAmhvBZThPKeZjP%2F5e6l27H185lb1aPi087Lz3CrZGyPgqvQMItf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwyNzQ1NjcxNDkzNzAiDDKjIPNdEvQ293datSqRA1kPoRNVN1nfJKFewC9WRu4jCu%2F7jzRcPw8Rn4Vjx5JqAUTcbF7tCuQH7ealk0oY4EXH3uqVyu3ogNuqltC9gVDQ52F8RcCKcLIluehwGFpqI%2FaynfeVSZtZKcdt21PIlvl9U4DLfcx1kD5LIFqqaOKUK3sIzeLDP0nn3sJy%2Fe8g9XcQHYOR92UC3V52kEYJ41YfbdF9vxeUELrG%2FmZYYen%2FySxAk79w7xj2pPg7TRYkNPdt7v0kX3Z0Nbf0ssolHEI3foCitjRfwgjFirDQmpayIiiuQhKO2TD13sAyyEcXWhqmOurtruabYrsz%2Fs8MStFmEu7Q9AovGOMCRpUcysL8Jb25kZHltr98QI6q9hc9Fl3vJ9gbG9CKV8esve3zHJ76BUIGtzhx5jwIE%2FwDIHbMrhWqU5Y%2Bpsf35gwR0gA1IHay%2FOus8g3fqZaKevqvdVTDuLA04VAttNRZnL1t5PVbQ3lSwsGUBkgFv%2FVPNhnvbB9VdR2Lu5c09ssuLH5BzHI4KxnEw3IEXa0HpEsbT9JPMMOeqPIFOusBIkxbGVx8AxBdroocfI3DwZvMAwEBNPPHql4dSOZJ3wCyLd%2BTSCbWGpydXZQQ0gxwx81gtFlTzu8ftebm2D2RJTLHNUuFCbHlUNtDFWytHZgU50NvopzJdI5%2F2Ht6jV1yMt9GSmRsbAnlkF10C%2BSGqQcexD5ZcMt8asbXP8sFOSBR1khIIAeO%2BCphBw9pyHHiaGzm7ivpSyvTB3raH7ltueMaEtwbGyTNRcsrP%2FrwClgwOZwpDNRfjio2cj26OtrlmZXoFkhF6oVpbcxvq5Ey0C1ab%2FAtlnPl7HTAucoOHrjoB8YGK1Soyl9WxA%3D%3D&X-Amz-Signature=182c6903e3ac2d7882c0804369dce47f64d9c8fa2dd664d7e3dbcf08d8f28c0e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
